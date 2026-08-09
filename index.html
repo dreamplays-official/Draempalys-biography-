@@ -72,50 +72,154 @@ footer{border-top:1px solid var(--line);padding:35px 0 60px;color:#888;font-size
 </div>
 <p class="section-intro" style="margin-top:20px">Dreamplays HQ also collaborates with OrbyBot and its team on digital projects.</p>
 </div></section>
-  <section class="cert-slider-section">
-    <h2 class="slider-title">My Verified Achievements & Certifications</h2>
-    <div class="slider-wrapper">
-        <div class="slider-track">
-            
-            <div class="slide-card google-border">
-                <img src="google-analytics-cert.png" alt="Google Analytics Certification">
-                <h3>Google Analytics Certified</h3>
-                <p>Google Skillshop • ID: 187799158</p>
-            </div>
+  <div class="certificate-slider">
 
-            <div class="slide-card microsoft-border">
-                <img src="microsoft-html-css-cert.png" alt="Microsoft Web Specialist">
-                <h3>HTML & CSS Specialist</h3>
-                <p>Microsoft Learn Verified</p>
-            </div>
+    <div class="certificate-track">
 
-            <div class="slide-card google-ads-border">
-                <img src="google-ads-ai-cert.png" alt="Google AI-Powered Ads Certification">
-                <h3>AI-Powered Ads Specialist</h3>
-                <p>Google Skillshop • ID: 187807008</p>
-            </div>
+        <!-- SET 1 -->
 
-            <div class="slide-card google-border">
-                <img src="google-analytics-cert.png" alt="Google Analytics Certification">
-                <h3>Google Analytics Certified</h3>
-                <p>Google Skillshop • ID: 187799158</p>
-            </div>
-
-            <div class="slide-card microsoft-border">
-                <img src="microsoft-html-css-cert.png" alt="Microsoft Web Specialist">
-                <h3>HTML & CSS Specialist</h3>
-                <p>Microsoft Learn Verified</p>
-            </div>
-
-            <div class="slide-card google-ads-border">
-                <img src="google-ads-ai-cert.png" alt="Google AI-Powered Ads Certification">
-                <h3>AI-Powered Ads Specialist</h3>
-                <p>Google Skillshop • ID: 187807008</p>
-            </div>
-
+        <div class="slide-card google-border">
+            <img src="google-analytics-cert.png"
+                 alt="Google Analytics Certification">
+            <h3>Google Analytics Certified</h3>
+            <p>Google Skillshop • ID: 187799158</p>
         </div>
+
+        <div class="slide-card microsoft-border">
+            <img src="microsoft-html-css-cert.png"
+                 alt="Microsoft Web Specialist">
+            <h3>HTML & CSS Specialist</h3>
+            <p>Microsoft Learn Verified</p>
+        </div>
+
+        <div class="slide-card google-ads-border">
+            <img src="google-ads-ai-cert.png"
+                 alt="Google AI-Powered Ads Certification">
+            <h3>AI-Powered Ads Specialist</h3>
+            <p>Google Skillshop • ID: 187807008</p>
+        </div>
+
+
+        <!-- SET 2 — SAME CARDS AGAIN FOR SMOOTH LOOP -->
+
+        <div class="slide-card google-border">
+            <img src="google-analytics-cert.png"
+                 alt="Google Analytics Certification">
+            <h3>Google Analytics Certified</h3>
+            <p>Google Skillshop • ID: 187799158</p>
+        </div>
+
+        <div class="slide-card microsoft-border">
+            <img src="microsoft-html-css-cert.png"
+                 alt="Microsoft Web Specialist">
+            <h3>HTML & CSS Specialist</h3>
+            <p>Microsoft Learn Verified</p>
+        </div>
+
+        <div class="slide-card google-ads-border">
+            <img src="google-ads-ai-cert.png"
+                 alt="Google AI-Powered Ads Certification">
+            <h3>AI-Powered Ads Specialist</h3>
+            <p>Google Skillshop • ID: 187807008</p>
+        </div>
+
     </div>
-  </section>
+
+  </div>
+  <style>
+/* ================= CERTIFICATE SLIDER ================= */
+
+.certificate-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.certificate-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+
+    /* LEFT → RIGHT LOOP */
+    animation: certificateLoop 25s linear infinite;
+}
+
+/* Chhote certificate cards */
+.slide-card {
+    flex: 0 0 220px;
+    width: 220px;
+    padding: 14px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Certificate image */
+.slide-card img {
+    width: 100%;
+    height: 135px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    display: block;
+}
+
+/* Text */
+.slide-card h3 {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.slide-card p {
+    font-size: 11px;
+    margin: 0;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+
+/* ================= LOOP ================= */
+
+@keyframes certificateLoop {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .slide-card {
+        flex: 0 0 175px;
+        width: 175px;
+        padding: 10px;
+    }
+
+    .slide-card img {
+        height: 105px;
+    }
+
+    .slide-card h3 {
+        font-size: 12px;
+    }
+
+    .slide-card p {
+        font-size: 9px;
+    }
+
+}
+  </style>
   <!-- ================= DREAMPLAYS HQ — OUR STORY ================= -->
 <section class="dp-story" id="our-story">
 
